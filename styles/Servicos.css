@@ -1,0 +1,47 @@
+
+/* SOJOB — MENU E LAYOUT MOBILE */
+@media (max-width: 768px) {
+    #nav-esq {
+        flex-wrap: wrap;
+    }
+
+    #icone-menu {
+        display: block;
+    }
+
+    #menu-principal {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #menu-principal.aberto {
+        display: flex;
+    }
+
+    #caixa-pesquisa {
+        width: 100%;
+    }
+
+    #campo-pesquisa {
+        width: 100%;
+        min-width: 0;
+    }
+
+    main {
+        padding: 20px 12px;
+    }
+
+    #feed {
+        width: 100%;
+    }
+
+    #lista-servicos {
+        grid-template-columns: 1fr;
+        padding: 12px;
+    }
+
+    #pedido {
+        margin: 16px 0 40px;
+    }
+}

@@ -1,0 +1,119 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SOJOB SERVIÇOS</title>
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+</head>
+<body>
+
+    <header>
+        <nav id="nav-esq">
+            <div id="logo">
+                <img src="./imagens/logo.jpeg.jpg" alt="logo SOJOB">
+            </div>
+
+            <ul id="icone-menu">
+                <li id="menu">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </li>
+            </ul>   
+
+
+          
+                      <!-- BARRA DE PESQUISA (adicionada, sem alterar nada) -->
+            <li id="caixa-pesquisa">
+                <ion-icon name="search-outline" id="icone-pesquisa"></ion-icon>
+                <input type="text" id="campo-pesquisa" placeholder="Pesquisar..." autocomplete="off">
+                <ul id="resultados-pesquisa"></ul>
+            </li>
+
+
+          
+            <ul id="menu-principal">
+                <li><a href="#" class="ativo"><ion-icon name="home-outline"></ion-icon> Home</a></li>
+                <li><a href="#"><ion-icon name="briefcase-outline"></ion-icon> Serviços</a></li>
+                <li><a href="#"><ion-icon name="person-circle-outline"></ion-icon> Conta</a></li>
+                <li><a href="#"><ion-icon name="settings-outline"></ion-icon> Definições</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seu conteúdo aqui -->
+      
+        <!-- FEED ESTILO YOUTUBE (adicionado) -->
+        <section id="feed"></section>
+    
+    
+    </main>
+      <!-- ===== BARRA INFERIOR ESTILO APP ===== -->
+    <nav id="barra-app">
+        <a href="index.html" class="item-app ativo">
+            <ion-icon name="home-outline"></ion-icon>
+            <span>Início</span>
+        </a>
+
+        <!-- CÂMERA: abre a câmera do telemóvel -->
+        <button class="item-app" id="btn-camera">
+            <ion-icon name="camera-outline"></ion-icon>
+            <span>Câmera</span>
+        </button>
+
+
+        <input type="file" id="input-camera" accept="image/*,video/*" capture="environment" hidden>
+      
+        
+
+
+
+      
+        <!-- BOTÃO + : abre menu de ações -->
+        <button class="item-app btn-mais" id="btn-mais">
+            <ion-icon name="add-circle"></ion-icon>
+        </button>
+
+        <a href="perfil.html" class="item-app">
+            <ion-icon name="person-outline"></ion-icon>
+            <span>Perfil</span>
+        </a>
+
+        <!-- VOLTAR AO TOPO -->
+        <button class="item-app" id="btn-topo">
+            <ion-icon name="arrow-up-outline"></ion-icon>
+            <span>Topo</span>
+        </button>
+    </nav>
+
+    <!-- Menu que abre com o botão + -->
+    <div id="menu-acoes">
+        <a href="servicos.html"><ion-icon name="briefcase-outline"></ion-icon> Pedir Serviço</a>
+        <a href="#" id="acao-camera"><ion-icon name="camera-outline"></ion-icon> Publicar Foto</a>
+        <a href="registo.html"><ion-icon name="person-add-outline"></ion-icon> Criar Conta</a>
+    </div>
+    <div id="fundo-menu"></div>
+
+    <!-- O footer fica no HTML, mas todo o estilo dele está
+         no CSS separado (styles/style.css, seção FOOTER) -->
+  
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/in-view.min.js"></script>
+
+    <!-- Ícones -->
+    <script src="https://unicons.iconscout.com/release/v4.0.0/script/unicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+    <!-- Script local -->
+    <script src="./scripts/index.js"></script>  <script src="./scripts/servicos.js"></script>
+<script src="./scripts/index.js"></script>
+</body>
+</html>
